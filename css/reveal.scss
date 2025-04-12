@@ -2260,10 +2260,3 @@ $notesWidthPercent: 25%;
     background-color: rgba(var(--r-overlay-element-bg-color), 1);
   }
 }
-
-/*********************************************
- * PRINT STYLES
- *********************************************/
-
-@import "print/pdf.scss";
-@import "print/paper.scss";
