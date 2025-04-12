@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Real Estate Visualization Analysis</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Slide 1: Introduction -->
+        <section>
+          <h2>Real Estate Visualization</h2>
+          <h3>Competitor Analysis & Architecture Proposal</h3>
+          <p>A Comprehensive Evaluation of ANewGo's Product</p>
+          <p><small>Presented by: Demetre Turabelidze</small></p>
+          <a
+            href="https://www.upwork.com/freelancers/zedyshstudio?s=1110580755057594368"
+            target="_blank"
+            ><small>Zedysh Studio (on Upwork)</small></a
+          >
+
+          <aside class="notes">
+            - Introduce yourself - Mention your experience with Mapbox and 3D visualization -
+            Outline what you'll cover in the presentation
+          </aside>
+        </section>
+
+        <!-- Slide 2: Competitor Product Analysis -->
+        <section>
+          <h2>Competitor Product Analysis</h2>
+          <h3>ANewGo MyHome Platform</h3>
+
+          <div
+            style="
+              background-color: rgba(255, 255, 255, 0.1);
+              height: 300px;
+              margin: 15px 0;
+              border-radius: 5px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <p>[Insert screenshot of competitor product home page here]</p>
+          </div>
+
+          <div style="display: flex">
+            <div style="flex: 1; padding: 0 10px">
+              <h4>Core Functionality</h4>
+              <ul>
+                <li>Interactive home visualization</li>
+                <li>Lot selection via Mapbox</li>
+                <li>Static image-based exterior design</li>
+              </ul>
+            </div>
+            <div style="flex: 1; padding: 0 10px">
+              <h4>Target Users</h4>
+              <ul>
+                <li>Home buyers</li>
+                <li>Real estate developers</li>
+                <li>Home builders</li>
+              </ul>
+            </div>
+          </div>
+
+          <aside class="notes">
+            - Explain their approach using static images vs. interactive 3D - Note the limitations
+            in user experience - Highlight that they use Mapbox - the same technology you have
+            expertise in
+          </aside>
+        </section>
+
+        <!-- Slide 3: Key Features Analysis -->
+        <section>
+          <h2>Key Features Analysis</h2>
+
+          <div style="display: flex">
+            <div style="flex: 1; padding: 0 10px">
+              <div
+                style="
+                  background-color: rgba(255, 255, 255, 0.1);
+                  height: 200px;
+                  margin: 15px 0;
+                  border-radius: 5px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <p>[Insert screenshot of map feature]</p>
+              </div>
+              <h4>Interactive Map</h4>
+              <p>Mapbox integration for lot selection</p>
+            </div>
+            <div style="flex: 1; padding: 0 10px">
+              <div
+                style="
+                  background-color: rgba(255, 255, 255, 0.1);
+                  height: 200px;
+                  margin: 15px 0;
+                  border-radius: 5px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <p>[Insert screenshot of design customization]</p>
+              </div>
+              <h4>Design Customization</h4>
+              <p>Static image swapping for different styles</p>
+            </div>
+          </div>
+
+          <div
+            style="
+              background-color: rgba(65, 105, 225, 0.2);
+              border-left: 3px solid royalblue;
+              padding: 10px;
+              margin: 15px 0;
+            "
+          >
+            <p>
+              <strong>Gap Analysis:</strong> Limited perspectives, no true 3D interaction,
+              constrained exploration experience
+            </p>
+          </div>
+
+          <aside class="notes">
+            - Point out the specific UI elements - Discuss the user flow and interaction patterns -
+            Explain the technical limitations of their approach
+          </aside>
+        </section>
+
+        <!-- Slide 4: My Mapbox Experience -->
+        <section>
+          <h2>My Relevant Experience</h2>
+          <h4>Mapbox Integration Projects</h4>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px">
+            <div>
+              <a href="https://umusic.glitch.ge/vcha/map" target="_blank"> Vcha: 3D Globe </a>
+
+              <div
+                style="
+                  width: 20em;
+                  margin-top: 12px;
+                  height: 18em;
+                  overflow: hidden;
+                  position: relative;
+                "
+              >
+                <div
+                  style="
+                    transform: scale(0.6);
+                    transform-origin: top left;
+                    width: 166.67%;
+                    height: 166.67%;
+                  "
+                >
+                  <iframe
+                    src="https://umusic.glitch.ge/vcha/map"
+                    style="width: 100%; height: 100%; border: none; border-radius: 8px"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="https://umusic.glitch.ge/jonbatiste/map" target="_blank">
+                Jon Batiste Interactive Map
+              </a>
+
+              <div
+                style="
+                  width: 20em;
+                  margin-top: 12px;
+                  height: 18em;
+                  overflow: hidden;
+                  position: relative;
+                "
+              >
+                <div
+                  style="
+                    transform: scale(0.6);
+                    transform-origin: top left;
+                    width: 166.67%;
+                    height: 166.67%;
+                  "
+                >
+                  <iframe
+                    src="https://umusic.glitch.ge/jonbatiste/map"
+                    style="width: 100%; height: 100%; border: none; border-radius: 8px"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide Test -->
+        <section>
+          <h2 style="margin-top: 0.5em">Interior View</h2>
+
+          <pre>
+				<code data-trim data-noescape class="language-js" style="padding: 1em; border-radius: 8px">
+					const texture = new THREE.TextureLoader(loadManager).load("/assets/room.jpg");
+					texture.mapping = THREE.EquirectangularRefractionMapping;
+					texture.colorSpace = THREE.SRGBColorSpace;
+					scene.background = texture;
+				</code>
+			</pre>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px">
+            <div>
+              <a
+                href="https://myhome.anewgo.com/client/demo/community/SVG%20Mirroring%20FPs%20-%20Master%20Community/plans?virtualTour=https%3A%2F%2Fvtx.anewgo.com%2Fclient%2FUnionMainHomes%2FCameron%2FVTX%2Findex.htm"
+                target="_blank"
+              >
+                Their Website
+              </a>
+
+              <div
+                style="
+                  width: 20em;
+                  margin-top: 12px;
+                  height: 18em;
+                  overflow: hidden;
+                  position: relative;
+                  padding-bottom: 100%;
+                "
+              >
+                <div
+                  style="
+                    transform: scale(0.6);
+                    transform-origin: top left;
+                    width: 166.67%;
+                    height: 166.67%;
+                  "
+                >
+                  <iframe
+                    src="https://myhome.anewgo.com/client/demo/community/SVG%20Mirroring%20FPs%20-%20Master%20Community/plans?virtualTour=https%3A%2F%2Fvtx.anewgo.com%2Fclient%2FUnionMainHomes%2FCameron%2FVTX%2Findex.htm"
+                    style="width: 100%; height: 100%; border: none; border-radius: 8px"
+                  >
+                    ></iframe
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="https://dmi.umgapps.com/ellafitzgerald" target="_blank"> My Project </a>
+
+              <div
+                style="
+                  width: 20em;
+                  margin-top: 12px;
+                  height: 18em;
+                  overflow: hidden;
+                  position: relative;
+                "
+              >
+                <div
+                  style="
+                    transform: scale(0.6);
+                    transform-origin: top left;
+                    width: 166.67%;
+                    height: 166.67%;
+                  "
+                >
+                  <iframe
+                    src="https://dmi.umgapps.com/ellafitzgerald"
+                    style="width: 100%; height: 100%; border: none; border-radius: 8px"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 5: My 3D Visualization Experience -->
+        <section>
+          <a href="https://real-estate-visualizator.vercel.app/" target="_blank"
+            >3D Visualization Demo Website in Three.js</a
+          >
+
+          <div style="width: 60%; margin-top: 12px; height: 15em; position: relative">
+            <div
+              style="
+                transform: scale(0.6);
+                transform-origin: top center;
+                width: 166.67%;
+                height: 166.67%;
+              "
+            >
+              <iframe
+                src="https://real-estate-visualizator.vercel.app/"
+                style="width: 100%; height: 100%; border: none; border-radius: 8px"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div style="display: flex">
+            <div style="flex: 1; padding: 0 10px">
+              <h4>Technical Implementation</h4>
+              <ul>
+                <li>Blender for 3D modeling</li>
+                <li>Custom UV unwrapping</li>
+                <li>4K texture baking</li>
+                <li>Optimization (700KB compressed textures)</li>
+              </ul>
+            </div>
+            <div style="flex: 1; padding: 0 10px">
+              <h4>Advantages Over Competitor</h4>
+              <ul>
+                <li>Full 360° interactive view</li>
+                <li>Real-time material changes</li>
+                <li>Better visual fidelity</li>
+                <li>More engaging user experience</li>
+              </ul>
+            </div>
+          </div>
+
+          <aside class="notes">
+            - Demo the 360° visualization capability - Explain how this approach is superior to
+            static images - Highlight your technical process for creating optimized 3D assets
+          </aside>
+        </section>
+
+        <section>
+          <h3 style="margin-top: 0.5em">Interior View</h3>
+
+          <small>
+            Their feature is impletemented using a static image change and it is not interactive.
+            <br />
+            <br />
+            While my approach is using a 3D mesh and a lightweight texture which switches.
+          </small>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px">
+            <div>
+              <a
+                href="https://myhome.anewgo.com/client/demo/community/SVG%20Mirroring%20FPs%20-%20Master%20Community/plans?virtualTour=https%3A%2F%2Fvtx.anewgo.com%2Fclient%2FUnionMainHomes%2FCameron%2FVTX%2Findex.htm"
+                target="_blank"
+              >
+                Their Website
+              </a>
+
+              <div
+                style="
+                  width: 20em;
+                  margin-top: 12px;
+                  height: 18em;
+                  overflow: hidden;
+                  position: relative;
+                  /* padding-bottom: 100%; */
+                "
+              >
+                <div
+                  style="
+                    transform: scale(0.6);
+                    transform-origin: top left;
+                    width: 166.67%;
+                    height: 166.67%;
+                  "
+                >
+                  <iframe
+                    src="https://myhome.anewgo.com/client/colordesigndemo/community/2.%20Color%20Scheme%20Design/plan/Burke?elevId=20"
+                    style="width: 100%; height: 100%; border: none; border-radius: 8px"
+                  >
+                    ></iframe
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="https://real-estate-visualizator.vercel.app/" target="_blank">
+                My Project Demo for This Presentation
+              </a>
+
+              <div
+                style="
+                  width: 20em;
+                  margin-top: 12px;
+                  height: 18em;
+                  overflow: hidden;
+                  position: relative;
+                "
+              >
+                <div
+                  style="
+                    transform: scale(0.6);
+                    transform-origin: top left;
+                    width: 166.67%;
+                    height: 166.67%;
+                  "
+                >
+                  <iframe
+                    src="https://real-estate-visualizator.vercel.app/"
+                    style="width: 100%; height: 100%; border: none; border-radius: 8px"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 6: Proposed Frontend Architecture -->
+        <section>
+          <h2>Proposed Architecture</h2>
+          <h3>Frontend Technology Stack</h3>
+
+          <div style="display: flex">
+            <div style="flex: 1; padding: 0 10px">
+              <h4>Core Technologies</h4>
+              <ul>
+                <li>React with Next.js</li>
+                <li>Three.js with React Three Fiber</li>
+                <li>Mapbox GL JS</li>
+                <li>TypeScript</li>
+              </ul>
+
+              <h4>UI/UX</h4>
+              <ul>
+                <li>Tailwind CSS</li>
+                <li>Framer Motion for animations</li>
+              </ul>
+            </div>
+            <div style="flex: 1; padding: 0 10px">
+              <div
+                style="
+                  background-color: rgba(65, 105, 225, 0.2);
+                  border-left: 3px solid royalblue;
+                  padding: 10px;
+                  margin: 15px 0;
+                "
+              >
+                <h4>Why This Stack?</h4>
+                <ul>
+                  <li>Performance optimized for 3D</li>
+                  <li>Strong typing for maintainability</li>
+                  <li>Smooth animations and transitions</li>
+                  <li>Responsive design for all devices</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <aside class="notes">
+            - Explain why React with Next.js is ideal for this type of application - Discuss the
+            benefits of React Three Fiber for 3D integration - Highlight TypeScript for
+            maintainability in larger projects
+          </aside>
+        </section>
+
+        <!-- Slide 7: Proposed Backend Architecture -->
+        <section>
+          <h2>Proposed Architecture</h2>
+          <h3>Backend & Data Management</h3>
+
+          <div style="display: flex">
+            <div style="flex: 1; padding: 0 10px">
+              <h4>Server Technologies</h4>
+              <ul>
+                <li>Node.js with Express</li>
+                <li>GraphQL API layer</li>
+                <li>RESTful services for simple operations</li>
+              </ul>
+
+              <h4>Data Storage</h4>
+              <ul>
+                <li>PostgreSQL for structured data</li>
+                <li>Redis for caching</li>
+                <li>AWS S3 for 3D assets</li>
+              </ul>
+            </div>
+            <div style="flex: 1; padding: 0 10px">
+              <div
+                style="
+                  background-color: rgba(65, 105, 225, 0.2);
+                  border-left: 3px solid royalblue;
+                  padding: 10px;
+                  margin: 15px 0;
+                "
+              >
+                <h4>Data Architecture Benefits</h4>
+                <ul>
+                  <li>Structured data for home configurations</li>
+                  <li>Efficient caching for performance</li>
+                  <li>Optimized storage for 3D assets</li>
+                  <li>Flexible API queries for frontend</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <aside class="notes">
+            - Explain how PostgreSQL provides structure for complex home configuration data -
+            Discuss how Redis improves performance for frequently accessed data - Highlight how
+            GraphQL provides flexible querying for the frontend
+          </aside>
+        </section>
+
+        <!-- Slide 8: 3D Enhancement Strategy -->
+        <section>
+          <h2>3D Enhancement Strategy</h2>
+
+          <div
+            style="
+              background-color: rgba(255, 255, 255, 0.1);
+              height: 250px;
+              margin: 15px 0;
+              border-radius: 5px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <p>[Insert conceptual image of 3D map integration]</p>
+          </div>
+
+          <ul>
+            <li>
+              <strong>2D to 3D Mapbox Upgrade:</strong> Leveraging Mapbox GL JS 3D capabilities
+            </li>
+            <li>
+              <strong>Real-time Customization:</strong> Interactive material and color changes
+            </li>
+            <li>
+              <strong>Performance Optimization:</strong> Progressive loading and LOD techniques
+            </li>
+            <li>
+              <strong>Mobile Compatibility:</strong> Responsive design with performance scaling
+            </li>
+          </ul>
+
+          <aside class="notes">
+            - Explain the technical process for upgrading from 2D to 3D maps - Discuss integration
+            points between Mapbox and Three.js - Highlight optimization techniques for mobile
+            performance
+          </aside>
+        </section>
+
+        <!-- Slide 9: Implementation Approach -->
+        <section>
+          <h2>Implementation Approach</h2>
+
+          <div style="display: flex">
+            <div style="flex: 1; padding: 0 10px">
+              <h4>Development Methodology</h4>
+              <ul>
+                <li>Component-based architecture</li>
+                <li>Separation of concerns</li>
+                <li>Modular design pattern</li>
+                <li>Progressive enhancement</li>
+              </ul>
+            </div>
+            <div style="flex: 1; padding: 0 10px">
+              <h4>Asset Pipeline</h4>
+              <ul>
+                <li>3D model optimization workflow</li>
+                <li>Texture compression strategy</li>
+                <li>Automated LOD generation</li>
+                <li>Dynamic loading system</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            style="
+              background-color: rgba(65, 105, 225, 0.2);
+              border-left: 3px solid royalblue;
+              padding: 10px;
+              margin: 15px 0;
+            "
+          >
+            <p>
+              <strong>Quality Assurance:</strong> Comprehensive testing across devices, browsers,
+              and connection speeds
+            </p>
+          </div>
+
+          <aside class="notes">
+            - Explain your approach to component architecture - Discuss your process for optimizing
+            3D assets - Highlight testing methodology for ensuring quality
+          </aside>
+        </section>
+
+        <!-- Slide 10: Added Value & Differentiation -->
+        <section>
+          <h2>Added Value & Differentiation</h2>
+
+          <ul>
+            <li>
+              <strong>Enhanced User Experience:</strong> Interactive 3D vs static images leads to
+              better engagement
+            </li>
+            <li>
+              <strong>Higher Conversion Rate:</strong> More realistic visualization increases buyer
+              confidence
+            </li>
+            <li>
+              <strong>Better Customization:</strong> Real-time material changes with immediate
+              feedback
+            </li>
+            <li><strong>Mobile Optimization:</strong> Full functionality across all devices</li>
+            <li><strong>Future-Ready:</strong> Architecture supports AR/VR integration path</li>
+          </ul>
+
+          <div
+            style="
+              background-color: rgba(65, 105, 225, 0.2);
+              border-left: 3px solid royalblue;
+              padding: 10px;
+              margin: 15px 0;
+            "
+          >
+            <p>
+              <strong>Key Differentiator:</strong> Seamless integration of professional 3D
+              visualization with interactive mapping
+            </p>
+          </div>
+
+          <aside class="notes">
+            - Explain how these improvements directly impact business metrics - Discuss the
+            competitive advantage of interactive 3D vs static images - Highlight the future
+            expansion possibilities
+          </aside>
+        </section>
+
+        <!-- Slide 11: Leadership & Team Approach -->
+        <section>
+          <h2>Leadership & Team Approach</h2>
+
+          <div style="display: flex">
+            <div style="flex: 1; padding: 0 10px">
+              <h4>Development Leadership</h4>
+              <ul>
+                <li>Frontend architecture oversight</li>
+                <li>3D development direction</li>
+                <li>Performance optimization guidance</li>
+                <li>Quality control standards</li>
+              </ul>
+            </div>
+            <div style="flex: 1; padding: 0 10px">
+              <h4>Collaboration Strategy</h4>
+              <ul>
+                <li>Cross-functional team coordination</li>
+                <li>Designer-developer workflow</li>
+                <li>Documentation & knowledge sharing</li>
+                <li>Agile development practices</li>
+              </ul>
+            </div>
+          </div>
+
+          <aside class="notes">
+            - Highlight your experience leading development teams - Discuss your approach to
+            collaboration between frontend and 3D teams - Explain your process for documentation and
+            knowledge transfer
+          </aside>
+        </section>
+
+        <!-- Slide 12: Timeline & Implementation Plan -->
+        <section>
+          <h2>Timeline & Implementation Plan</h2>
+
+          <ul>
+            <li>
+              <strong>Discovery & Requirements (2 weeks):</strong> Understanding business needs and
+              technical requirements
+            </li>
+            <li>
+              <strong>Architecture Setup (4 weeks):</strong> Building the foundation and core
+              functionality
+            </li>
+            <li>
+              <strong>3D Model Integration (3 weeks):</strong> Preparing and optimizing 3D assets
+            </li>
+            <li>
+              <strong>UI/UX Refinement (2 weeks):</strong> Enhancing user interface and experience
+            </li>
+            <li>
+              <strong>Testing & Optimization (2 weeks):</strong> Ensuring quality and performance
+            </li>
+          </ul>
+
+          <p><strong>Total MVP Timeline: 13 weeks</strong></p>
+
+          <aside class="notes">
+            - Explain your rationale for the timeline estimates - Discuss potential for parallel
+            development tracks - Highlight critical path dependencies
+          </aside>
+        </section>
+
+        <!-- Slide 13: Conclusion -->
+        <section>
+          <h2>Conclusion</h2>
+
+          <div
+            style="
+              background-color: rgba(65, 105, 225, 0.2);
+              border-left: 3px solid royalblue;
+              padding: 10px;
+              margin: 15px 0;
+            "
+          >
+            <h3>Key Advantages of Proposed Approach</h3>
+            <ul>
+              <li>Enhanced user experience through interactive 3D visualization</li>
+              <li>Leverage of existing Mapbox expertise for seamless integration</li>
+              <li>Scalable architecture supporting future enhancements</li>
+              <li>Performance-optimized for all devices</li>
+            </ul>
+          </div>
+
+          <p>
+            My unique combination of Mapbox and 3D visualization expertise positions me ideally to
+            deliver this project successfully.
+          </p>
+
+          <h3>Thank You</h3>
+          <p>Questions?</p>
+
+          <aside class="notes">
+            - Summarize the key benefits of your approach - Reinforce your expertise and experience
+            - Express enthusiasm for the project - Open for questions
+          </aside>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        progress: true,
+        controls: true,
+        transition: "slide",
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
